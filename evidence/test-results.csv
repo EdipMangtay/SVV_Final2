@@ -1,0 +1,60 @@
+TestClass,TestInvocation,TimeSeconds,Status
+com.svv.risk.DecisionTableTest,rule4_safeUnlockedWithinNominalCap_approved,0.003,PASS
+com.svv.risk.DecisionTableTest,rule5_recoveryOverridesGrowthAndRejectsExcessRisk,0.001,PASS
+com.svv.risk.DecisionTableTest,rule3_normalDailyCapacityTighterThanNominal_rejected,0.0,PASS
+com.svv.risk.DecisionTableTest,rule7_dailyLockedRejectsAnyTrade,0.0,PASS
+com.svv.risk.DecisionTableTest,rule1_normalUnlockedWithinNominalCap_approved,0.0,PASS
+com.svv.risk.DecisionTableTest,rule2_growthUnlockedWithinNominalCap_approved,0.0,PASS
+com.svv.risk.DecisionTableTest,rule6_unlockedWrongTradingDay_rejected,0.001,PASS
+com.svv.risk.DecisionTableTest,rule8_overallLockedPersistsAcrossDaysAndRejectsTrade,0.0,PASS
+com.svv.risk.MainTest,fullInteractiveCliWorkflow,0.007,PASS
+com.svv.risk.MainTest,cliReportsBusinessRejectionsAndDailyLockAlert,0.001,PASS
+com.svv.risk.MainTest,malformedCommandsAreHandledGracefully,0.001,PASS
+com.svv.risk.RegressionTest,regression_riskCapRecalculatesImmediatelyAfterLosses,0.0,PASS
+com.svv.risk.RegressionTest,regression_trimmedTradeIdPreventsDuplicateReuseAndDoubleSettlement,0.001,PASS
+com.svv.risk.RegressionTest,regression_recoveryStreakPersistsAcrossDaysAndResetsOnWin,0.001,PASS
+com.svv.risk.RegressionTest,regression_exactOverallFloorEqualityActivatesPermanentLock,0.001,PASS
+com.svv.risk.RegressionTest,regression_exactDailyFloorEqualityActivatesDailyLock,0.001,PASS
+com.svv.risk.RiskPolicyTest,settlementPnlRoundingAndExactLoss,0.001,PASS
+com.svv.risk.RiskPolicyTest,"recoveryStreakBoundary(int, RiskMode)[1]",0.005,PASS
+com.svv.risk.RiskPolicyTest,"recoveryStreakBoundary(int, RiskMode)[2]",0.0,PASS
+com.svv.risk.RiskPolicyTest,"recoveryStreakBoundary(int, RiskMode)[3]",0.0,PASS
+com.svv.risk.RiskPolicyTest,"overallLossFloorBoundary(String, boolean)[1]",0.001,PASS
+com.svv.risk.RiskPolicyTest,"overallLossFloorBoundary(String, boolean)[2]",0.001,PASS
+com.svv.risk.RiskPolicyTest,"overallLossFloorBoundary(String, boolean)[3]",0.0,PASS
+com.svv.risk.RiskPolicyTest,lossFloorsRoundUpwardConservatively,0.0,PASS
+com.svv.risk.RiskPolicyTest,"maxTradeRiskBoundary(String, boolean)[1]",0.004,PASS
+com.svv.risk.RiskPolicyTest,"maxTradeRiskBoundary(String, boolean)[2]",0.0,PASS
+com.svv.risk.RiskPolicyTest,"maxTradeRiskBoundary(String, boolean)[3]",0.001,PASS
+com.svv.risk.RiskPolicyTest,nominalRoundingAndCapacityClamping,0.001,PASS
+com.svv.risk.RiskPolicyTest,"dailyLossFloorBoundary(String, boolean)[1]",0.0,PASS
+com.svv.risk.RiskPolicyTest,"dailyLossFloorBoundary(String, boolean)[2]",0.0,PASS
+com.svv.risk.RiskPolicyTest,"dailyLossFloorBoundary(String, boolean)[3]",0.001,PASS
+com.svv.risk.RiskPolicyTest,riskModePriorityPrecedence,0.001,PASS
+com.svv.risk.RiskPolicyTest,"safeThresholdBoundary(String, RiskMode, String)[1]",0.0,PASS
+com.svv.risk.RiskPolicyTest,"safeThresholdBoundary(String, RiskMode, String)[2]",0.0,PASS
+com.svv.risk.RiskPolicyTest,"safeThresholdBoundary(String, RiskMode, String)[3]",0.001,PASS
+com.svv.risk.RiskPolicyTest,invalidPolicyParametersThrowException,0.001,PASS
+com.svv.risk.RiskPolicyTest,"growthThresholdBoundary(String, RiskMode, String)[1]",0.001,PASS
+com.svv.risk.RiskPolicyTest,"growthThresholdBoundary(String, RiskMode, String)[2]",0.0,PASS
+com.svv.risk.RiskPolicyTest,"growthThresholdBoundary(String, RiskMode, String)[3]",0.0,PASS
+com.svv.risk.TradeRequestTest,nonPositiveRewardToRiskThrowsException(String)[1],0.011,PASS
+com.svv.risk.TradeRequestTest,nonPositiveRewardToRiskThrowsException(String)[2],0.001,PASS
+com.svv.risk.TradeRequestTest,validRequestNormalizesIdAndMoneyScale,0.002,PASS
+com.svv.risk.TradeRequestTest,fractionalCentRiskThrowsException(String)[1],0.001,PASS
+com.svv.risk.TradeRequestTest,fractionalCentRiskThrowsException(String)[2],0.0,PASS
+com.svv.risk.TradeRequestTest,fractionalCentRiskThrowsException(String)[3],0.001,PASS
+com.svv.risk.TradeRequestTest,blankTradeIdThrowsException(String)[1],0.0,PASS
+com.svv.risk.TradeRequestTest,blankTradeIdThrowsException(String)[2],0.001,PASS
+com.svv.risk.TradeRequestTest,nullRequiredFieldsThrowException,0.001,PASS
+com.svv.risk.TradeRequestTest,zeroOrNegativeWellFormedRiskPassesStructuralValidation(String)[1],0.001,PASS
+com.svv.risk.TradeRequestTest,zeroOrNegativeWellFormedRiskPassesStructuralValidation(String)[2],0.0,PASS
+com.svv.risk.TradingAccountTest,invalidTradingDayTransitionsThrowAndPreserveState,0.007,PASS
+com.svv.risk.TradingAccountTest,zeroAndNegativeRiskProposalsRejectedWithoutStateChange,0.0,PASS
+com.svv.risk.TradingAccountTest,pendingTradeGuardsEnforceAuthorizationAndConsistency,0.001,PASS
+com.svv.risk.TradingAccountTest,defaultAccountInitializationStatus,0.001,PASS
+com.svv.risk.TradingAccountTest,winSettlementUpdatesBalanceAndKeepsOverallFloorStatic,0.0,PASS
+com.svv.risk.TradingAccountTest,overallCapacityConstraintEnforcedBeforePermanentLock,0.001,PASS
+com.svv.risk.TradingAccountTest,duplicateTradeIdReuseIsRejectedWithoutStateChange,0.001,PASS
+com.svv.risk.TradingAccountTest,invalidAccountConstructorArgumentsThrow,0.001,PASS
+com.svv.risk.TradingAccountTest,newDayClearsDailyLockAndPreservesConsecutiveLosses,0.0,PASS
