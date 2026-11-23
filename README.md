@@ -4,7 +4,8 @@ A deterministic Java 17 command-line application and JUnit 5 verification suite 
 
 Given a virtual proprietary trading account's current state and a proposed trade, the application deterministically decides whether to **APPROVE** or **REJECT** the trade with an explicit explanation, enforces dynamic risk modes and daily/overall drawdown locks, and maintains strict trade-lifecycle invariants using `java.math.BigDecimal`.
 
-> **Instructor Approval Notice:** Per `Assignment.pdf` (Sections 2 and 7), the project topic requires instructor approval prior to final compliance sign-off. A separate topic proposal is provided in [`proposal/project-proposal.md`](proposal/project-proposal.md).
+**Student:** 210911044 — Ali Edip Mangtay  
+**Project Topic Status:** Instructor-approved topic (proposal archived in [`proposal/project-proposal.md`](proposal/project-proposal.md)).
 
 ---
 
@@ -52,10 +53,10 @@ PropFirmRiskManagement/
 │   ├── mutation-before.txt         # Controlled mutation failure log (<= changed to <)
 │   └── mutation-after.txt          # Restored regression verification log
 ├── proposal/
-│   └── project-proposal.md         # Concise project proposal for instructor approval
+│   └── project-proposal.md         # Approved project proposal summary
 └── report/
-    ├── STUDENTNUMBER_FIRSTNAME_LASTNAME.docx  # Editable academic report (Word)
-    └── STUDENTNUMBER_FIRSTNAME_LASTNAME.pdf   # Final academic report (PDF, max 7 pages)
+    ├── 210911044_ALIEDIP_MANGTAY.docx  # Final academic report (Word)
+    └── 210911044_ALIEDIP_MANGTAY.pdf   # Final academic report (PDF, 7 pages)
 ```
 
 ---
@@ -134,4 +135,5 @@ From the latest `mvn -B clean verify` run recorded in [`evidence/maven-verify.tx
   - [`evidence/jacoco.csv`](evidence/jacoco.csv) and [`evidence/jacoco-html.zip`](evidence/jacoco-html.zip) — coverage artifacts
   - [`evidence/mutation-before.txt`](evidence/mutation-before.txt) and [`evidence/mutation-after.txt`](evidence/mutation-after.txt) — controlled mutation experiment (`isDailyLocked`: `<=` mutated to `<`, detected by 5 tests across 5 test classes, restored and re-verified)
 - **Academic Report:** [`report/`](report/)
-  - Rename `STUDENTNUMBER_FIRSTNAME_LASTNAME.docx` and `STUDENTNUMBER_FIRSTNAME_LASTNAME.pdf` with your actual student number and full name before Blackboard submission.
+  - [`report/210911044_ALIEDIP_MANGTAY.docx`](report/210911044_ALIEDIP_MANGTAY.docx) — editable Word document
+  - [`report/210911044_ALIEDIP_MANGTAY.pdf`](report/210911044_ALIEDIP_MANGTAY.pdf) — final 7-page A4 PDF report

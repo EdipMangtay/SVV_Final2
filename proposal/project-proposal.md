@@ -1,8 +1,8 @@
 # Project Proposal — Software Verification & Validation Assignment
 
-**Status:** Pending Instructor Approval *(Required before formal implementation acceptance per Assignment Section 2 and Section 7.)*  
+**Status:** Topic Approved by Instructor (confirmed by student)  
 **Submission Window:** 17–24 November 2026  
-**Student:** `[STUDENT_NUMBER]` — `[FIRST_NAME LAST_NAME]` *(Replace placeholders with real student details before submission)*
+**Student:** `210911044` — Ali Edip Mangtay
 
 ---
 
