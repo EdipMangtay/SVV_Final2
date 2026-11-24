@@ -1,11 +1,11 @@
 # Prop Firm Risk Management & Trade Validation System
 
-A deterministic Java 17 command-line application and JUnit 5 verification suite developed for the **Software Verification & Validation (SVV)** Research Assignment.
+A deterministic Java 17 command line application and JUnit 5 verification suite developed for the **Software Verification & Validation (SVV)** Research Assignment.
 
-Given a virtual proprietary trading account's current state and a proposed trade, the application deterministically decides whether to **APPROVE** or **REJECT** the trade with an explicit explanation, enforces dynamic risk modes and daily/overall drawdown locks, and maintains strict trade-lifecycle invariants using `java.math.BigDecimal`.
+Given a virtual proprietary trading account's current state and a proposed trade, the application deterministically decides whether to **APPROVE** or **REJECT** the trade with an explicit explanation, enforces dynamic risk modes and daily/overall drawdown locks, and maintains strict trade lifecycle invariants using `java.math.BigDecimal`.
 
-**Student:** 210911044 — Ali Edip Mangtay  
-**Project Topic Status:** Instructor-approved topic (proposal archived in [`proposal/project-proposal.md`](proposal/project-proposal.md)).
+**Student:** 210911044, Ali Edip Mangtay  
+**Project Topic Status:** Instructor approved topic (proposal archived in [`proposal/project-proposal.md`](proposal/project-proposal.md)).
 
 ---
 
@@ -37,18 +37,18 @@ SVV_Final2/
 │   │   ├── TradeDecision.java      # Immutable approval/rejection result (record)
 │   │   ├── TradeOutcome.java       # WIN, LOSS enum
 │   │   ├── TradeRequest.java       # Immutable structurally validated trade (record)
-│   │   └── TradingAccount.java     # Stateful account & trade-lifecycle aggregate
+│   │   └── TradingAccount.java     # Stateful account & trade lifecycle aggregate
 │   └── test/java/com/svv/risk/
-│       ├── DecisionTableTest.java  # 8 executable decision-table rules (DT)
-│       ├── MainTest.java           # CLI integration & malformed-input tests (EP, NT)
+│       ├── DecisionTableTest.java  # 8 executable decision table rules (DT)
+│       ├── MainTest.java           # CLI integration & malformed input tests (EP, NT)
 │       ├── RegressionTest.java     # 5 permanent invariant guards (RT)
 │       ├── RiskPolicyTest.java     # Pure BVA, EP, rounding & priority tests
 │       ├── TradeRequestTest.java   # Structural validation tests (EP, NT)
-│       └── TradingAccountTest.java # Lifecycle, multi-day & negative tests
+│       └── TradingAccountTest.java # Lifecycle, multi day & negative tests
 ├── evidence/
 │   ├── maven-verify.txt            # Verbatim 'mvn -B clean verify' output
-│   ├── test-results.csv            # Machine-parsed Surefire invocation results (59 rows)
-│   ├── jacoco.csv                  # JaCoCo class-level coverage counters
+│   ├── test-results.csv            # Machine parsed Surefire invocation results (59 rows)
+│   ├── jacoco.csv                  # JaCoCo class level coverage counters
 │   ├── jacoco-html.zip             # Archived JaCoCo HTML report
 │   ├── mutation-before.txt         # Controlled mutation failure log (<= changed to <)
 │   └── mutation-after.txt          # Restored regression verification log
@@ -130,10 +130,10 @@ From the latest `mvn -B clean verify` run recorded in [`evidence/maven-verify.tx
 ## Evidence & Report Locations
 
 - **Testing & Coverage Evidence:** [`evidence/`](evidence/)
-  - [`evidence/maven-verify.txt`](evidence/maven-verify.txt) — final Maven verification output
-  - [`evidence/test-results.csv`](evidence/test-results.csv) — all 59 executed test invocations
-  - [`evidence/jacoco.csv`](evidence/jacoco.csv) and [`evidence/jacoco-html.zip`](evidence/jacoco-html.zip) — coverage artifacts
-  - [`evidence/mutation-before.txt`](evidence/mutation-before.txt) and [`evidence/mutation-after.txt`](evidence/mutation-after.txt) — controlled mutation experiment (`isDailyLocked`: `<=` mutated to `<`, detected by 5 tests across 5 test classes, restored and re-verified)
+  - [`evidence/maven-verify.txt`](evidence/maven-verify.txt): final Maven verification output
+  - [`evidence/test-results.csv`](evidence/test-results.csv): all 59 executed test invocations
+  - [`evidence/jacoco.csv`](evidence/jacoco.csv) and [`evidence/jacoco-html.zip`](evidence/jacoco-html.zip): coverage artifacts
+  - [`evidence/mutation-before.txt`](evidence/mutation-before.txt) and [`evidence/mutation-after.txt`](evidence/mutation-after.txt): controlled mutation experiment (`isDailyLocked`: `<=` mutated to `<`, detected by 5 tests across 5 test classes, restored and verified again)
 - **Academic Report:** [`report/`](report/)
-  - [`report/210911044_ALIEDIP_MANGTAY.docx`](report/210911044_ALIEDIP_MANGTAY.docx) — editable Word document
-  - [`report/210911044_ALIEDIP_MANGTAY.pdf`](report/210911044_ALIEDIP_MANGTAY.pdf) — final 7-page A4 PDF report
+  - [`report/210911044_ALIEDIP_MANGTAY.docx`](report/210911044_ALIEDIP_MANGTAY.docx): editable Word document
+  - [`report/210911044_ALIEDIP_MANGTAY.pdf`](report/210911044_ALIEDIP_MANGTAY.pdf): final 7 page A4 PDF report
