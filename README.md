@@ -24,7 +24,7 @@ Given a virtual proprietary trading account's current state and a proposed trade
 ## Project Structure
 
 ```text
-PropFirmRiskManagement/
+SVV_Final2/
 ├── pom.xml
 ├── README.md
 ├── .gitignore
@@ -63,7 +63,7 @@ PropFirmRiskManagement/
 
 ## How to Build, Run, Test, and Measure Coverage
 
-All commands are run from the `PropFirmRiskManagement/` directory.
+All commands are run from the `SVV_Final2/` directory.
 
 ### 1. Compile the Application
 
